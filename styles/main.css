@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  --orange: hsl(25, 97%, 53%);
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Lightest-Blue: hsl(218, 24%, 22%);
+  --Lighter-Blue: hsl(218, 24%, 18%);
+  --Dark-Blue: hsl(215, 30%, 13%);
+  --Very-Dark-Blue: hsl(231, 17%, 8%);
+}
+
+@font-face {
+  font-family: "Overpass", sans-serif;
+
+  src: url(https://fonts.google.com/specimen/Overpass);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.none {
+  display: none;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    ellipse at top,
+    var(--Lighter-Blue),
+    var(--Dark-Blue)
+  );
+
+  border-radius: 1.6rem;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: Overpass;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.descrp {
+  color: var(--Light-Grey);
+  font-family: Overpass;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+
+.icon-circle {
+  background-color: var(--Lightest-Blue);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-circle img {
+  width: 1rem;
+  height: 1rem;
+}
+
+.rating-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.rating-btn {
+  font-family: Overpass;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: var(--Lightest-Blue);
+  padding: 1rem 1.4rem;
+  border: none;
+  color: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rating-btn:hover {
+  background-color: var(--orange);
+  color: var(--White);
+}
+
+.clicked {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.submit {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: var(--White);
+  font-weight: 400;
+  background-color: var(--orange);
+  font-family: Overpass;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 9rem;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+
+.submit:hover {
+  background-color: var(--White);
+  color: var(--orange);
+}
+
+.thanks {
+  display: none;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.thanks-image {
+  margin-top: 2rem;
+  width: 10rem;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.chosen-rating {
+  background-color: var(--Lightest-Blue);
+  color: var(--orange);
+  font-family: Overpass;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.thanks_title {
+  text-justify: auto;
+  font-weight: 400;
+  font-family: Overpass;
+}
+
+.thanks-descrp {
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.attribution {
+  color: var(--White);
+}
